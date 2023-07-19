@@ -13,6 +13,6 @@ var app = new Vue({
         }
     },
     mounted() {
-        axios.get('http://localhost:8000/api/cliente/').then(response => this.cliente = response.data)
+        axios.get('http://django-back-api.eba-bpjmgqjs.us-west-2.elasticbeanstalk.com/api/cliente/').then(response => this.cliente = response.data)
     },
 });
